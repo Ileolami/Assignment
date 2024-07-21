@@ -11,11 +11,13 @@ function App() {
   return (
     <div className="min-h-screen">
       <ConnectWallet />
-      <div className="flex justify-center items-center gap-10">
-        <Greeting />
+      <div className="flex justify-center items-center">
+       <div className='grid grid-cols-4'>
+       <Greeting />
         <SetGreeting />
         <TotalCounter />
         <UserGreetingCounter />
+       </div>
         </div>
     </div>
   )

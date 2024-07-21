@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { publicClient, contractAddress } from './Client'
 import { ABI } from './ABI'
-import { parseUnits } from 'viem'
 
 const TotalCounter = () => {
     const [count, setCount] = useState(0);
@@ -16,7 +15,7 @@ const TotalCounter = () => {
                     functionName: 'totalCounter',
                 })
                 console.log(data)
-                setCount (data.toString())
+                setCount(Number(data));
             } catch (error) {
                 console.error(error)
             }

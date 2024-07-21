@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { publicClient, contractAddress } from './Client';
 import { ABI } from './ABI';
 
