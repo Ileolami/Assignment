@@ -12,6 +12,6 @@ export const walletClient = createWalletClient({
   })
  
 
-export const [account] = await walletClient.getAddresses()
+export const [ account ] = await walletClient.getAddresses()
 
 export const contractAddress = '0x5d497d0fa8d77c0F9f75D3E67E839DA150920471'

@@ -1,17 +1,24 @@
-import './App.css'
-import ConnectWallet from './Component/ConnectWallet'
+
+import './App.css';
+import ConnectWallet from './Component/ConnectWallet';
+import SetGreeting from './SetGreeting';
+import Greeting from './Greeting';
+import TotalCounter from './TotalCounter';
+import UserGreetingCounter from './userGreetingCounter';
+
 
 function App() {
-
-
   return (
-    <main className='min-h-screen '>
+    <div className="min-h-screen">
       <ConnectWallet />
-      <div>
-        <button type='button' className='btn btn-primary'>Connect Wallet</button>
-      </div>
-    </main>
+      <div className="flex justify-center items-center gap-10">
+        <Greeting />
+        <SetGreeting />
+        <TotalCounter />
+        <UserGreetingCounter />
+        </div>
+    </div>
   )
 }
 
-export default App
+export default App;
